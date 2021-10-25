@@ -1,5 +1,6 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
 }
 
 .header {
@@ -33,12 +34,13 @@ body {
 
 .banner {
   text-align: center;
-  /* padding: 150px 75px; */
+  padding: 75px 75px;
+  font-size: 36px;
 }
 
 h1 {
   text-align: center;
-  /* padding: 150px 75px; */
+  padding: 75px 75px;
 }
 
 .links-container {
@@ -54,6 +56,7 @@ h1 {
 
 .title {
   margin-bottom: 20px;
+  font-weight: bold;
 }
 
 .btn {
@@ -99,14 +102,14 @@ h1 {
   margin: 0px 100px;
 }
 
-.albums-container {
+.paint-container {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
 }
 
-.album-card {
+.paint-card {
   width: 18rem;
   margin-right: 16px;
   margin-left: 16px;
@@ -117,7 +120,29 @@ h1 {
   box-shadow: 3px 3px 3px #d4d4d4;
 }
 
-.album-card:hover {
+.paint-card:hover {
+  transform: translateY(-4px);
+}
+
+.sculpture-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.sculpture-card {
+  width: 18rem;
+  margin-right: 16px;
+  margin-left: 16px;
+  margin-bottom: 32px;
+  border: 1px solid #a3a3a3;
+  padding: 16px;
+  border-radius: 4px;
+  box-shadow: 3px 3px 3px #d4d4d4;
+}
+
+.sculpture-card:hover {
   transform: translateY(-4px);
 }
 
@@ -139,13 +164,17 @@ h1 {
   justify-content: space-between;
 }
 
-.songs-info {
+.paint-info {
+  align-items: flex-end;
+}
+
+.sculpture-info {
   align-items: flex-end;
 }
 
 @media screen and (max-width: 576px) {
   .nav-container {
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
   }
 
@@ -154,7 +183,7 @@ h1 {
   }
 
   .links-container {
-    flex-direction: column;
+    flex-direction: row;
   }
 
   .container {
